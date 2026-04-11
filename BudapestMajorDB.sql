@@ -245,8 +245,8 @@ VALUES
 CREATE TABLE dbo.coach (
     coach_id INTEGER PRIMARY KEY,
     nickname NVARCHAR(50) NOT NULL,
-    first_name VARCHAR(30) NULL,
-    last_name VARCHAR(30) NULL,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
     birth_date DATE NULL,
     country NVARCHAR(30) NOT NULL,
     CONSTRAINT UQ_coach_nickname UNIQUE (nickname)
