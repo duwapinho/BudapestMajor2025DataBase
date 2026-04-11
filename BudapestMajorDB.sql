@@ -71,7 +71,7 @@ CREATE TABLE dbo.player (
     nickname VARCHAR(50) NOT NULL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
-    birth_date DATE NULL,
+    birth_date DATE NOT NULL,
     position VARCHAR(20) NOT NULL,
     country VARCHAR(25) NOT NULL,
 
