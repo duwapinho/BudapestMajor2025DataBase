@@ -72,7 +72,7 @@ CREATE TABLE dbo.player (
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     birth_date DATE NULL,
-    position VARCHAR(20) Null,
+    position VARCHAR(20) NOT NULL,
     country VARCHAR(25) NOT NULL,
 
     CONSTRAINT UQ_player_nickname UNIQUE (nickname)
@@ -247,7 +247,7 @@ CREATE TABLE dbo.coach (
     nickname NVARCHAR(50) NOT NULL,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
-    birth_date DATE NULL,
+    birth_date DATE NOT NULL,
     country NVARCHAR(30) NOT NULL,
     CONSTRAINT UQ_coach_nickname UNIQUE (nickname)
 );
