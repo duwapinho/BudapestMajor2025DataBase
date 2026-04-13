@@ -2,9 +2,9 @@
 Data about Counter Strike 2 Budapest Major 2025.  
 Sources: https://liquipedia.net/, https://www.hltv.org/.
 
-PowerBi Dashboard.:
+PowerBi Dashboard:
 
-Interactive Power BI dashboard analyzing CS2 Major 2025, including.: 
+Interactive Power BI dashboard analyzing CS2 Major 2025, including: 
 
 PlayersPage: This page focuses on individual player performance during the tournament.
 Featuring: average rating, K/D ratio, average damage per round (ADR), recent match performance (last 5 maps) and basic information such as Birthdate name nationality etc.
