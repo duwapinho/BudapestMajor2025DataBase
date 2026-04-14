@@ -46,7 +46,6 @@ JOIN dbo.match_map mm
     ON mm.match_map_id = pms.match_map_id
 JOIN dbo.matches m 
     ON m.match_id = mm.match_id
-WHERE m.tournament_id = 1
 GROUP BY  p.nickname,t.team_name
 HAVING COUNT(*) >= 5
 ORDER BY avg_rating DESC;
@@ -64,7 +63,6 @@ JOIN dbo.match_map mm
 ON mm.match_map_id = pms.match_map_id
 JOIN dbo.matches m 
 ON m.match_id = mm.match_id
-WHERE m.tournament_id = 1
 GROUP BY p.nickname,t.team_name
 HAVING COUNT(*) >= 5
 ORDER BY avg_rating ASC;
@@ -127,7 +125,6 @@ WITH player_avg AS (
         ON mm.match_map_id = pms.match_map_id
     JOIN dbo.matches m 
         ON m.match_id = mm.match_id
-    WHERE m.tournament_id = 1
     GROUP BY  p.player_id,p.nickname, t.team_id, t.team_name
 ),
 ranked_players AS (
@@ -163,7 +160,6 @@ JOIN dbo.match_map mm
     ON mm.match_map_id = pms.match_map_id
 JOIN dbo.matches m 
     ON m.match_id = mm.match_id
-WHERE m.tournament_id = 1
 GROUP BY p.nickname
 HAVING SUM(pms.deaths) > 0
 ORDER BY kd_ratio DESC;
